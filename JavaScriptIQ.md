@@ -31,7 +31,7 @@
 
         console.log(add5(2)); // 7
         console.log(add10(2)); // 12
-
+        ```
     - In the above code we have a function "makeAdder" which acts as a function factory.
     - It takes a single argument and return one function, which in turn takes another argument y and returns the sum of x and y.
     - In the above example code the function factory creates two new function, one that add 5 to the argument and another 10.
