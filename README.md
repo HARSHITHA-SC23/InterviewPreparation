@@ -4,18 +4,18 @@ This repository serves as a journal for my daily learning as I prepare to excel 
 <details>
   <summary><b>JavaScript</b></summary>
 
-- [JavaScript Notes](JavaScript/JavaScriptNotes.md)
-- [JavaScript Interview Questions](JavaScript/JavaScriptIQ.md)
+- [JavaScript Notes](javascript\JavaScriptNotes.md)
+- [JavaScript Interview Questions](javascript\JavaScriptIQ.md)
 </details>
 
 <details>
   <summary><b>Problem Solving</b></summary>
 
-- [Coding Questions](codingProblems.md)
+- [Coding Questions](CodingProblems.md)
 </details>
 
 <details>
   <summary><b>Interpersonal skills and Presentation Skills</b></summary>
 
-- [Mindfullness](mindfullness.md)
+- [Mindfullness](MindFullness.md)
 </details>
