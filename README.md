@@ -4,8 +4,8 @@ This repository serves as a journal for my daily learning as I prepare to excel 
 <details>
   <summary><b>JavaScript</b></summary>
 
-- [JavaScript Notes](JavaScript\JavaScriptNotes.md)
-- [JavaScript Interview Questions](JavaScript\JavaScriptIQ.md)
+- [JavaScript Notes](JavaScript/JavaScriptNotes.md)
+- [JavaScript Interview Questions](JavaScript/JavaScriptIQ.md)
 </details>
 
 <details>
