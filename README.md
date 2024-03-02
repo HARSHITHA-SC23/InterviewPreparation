@@ -11,11 +11,11 @@ This repository serves as a journal for my daily learning as I prepare to excel 
 <details>
   <summary><b>Problem Solving</b></summary>
 
-- [Coding Questions](CodingProblems.md)
+- [Coding Questions](problem-solving/CodingProblems.md)
 </details>
 
 <details>
   <summary><b>Interpersonal skills and Presentation Skills</b></summary>
 
-- [Mindfullness](MindFullness.md)
+- [Mindfullness](soft-skills/MindFullness.md)
 </details>
