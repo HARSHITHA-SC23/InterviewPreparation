@@ -174,3 +174,189 @@
     - The keywords that are reserved for future use are not allowed to be used as variable or function names in strict mode.
 
 ## JavaScript Basics - Part 2
+
+<b>Functions: </b>
+- Functions are set of statements that takes some input, performs specific task and returns the output.
+- Functions are executed when something invokes or calls it.
+- Function invokation can happen in the below scenario:
+    - Triggered by an event.
+    - Explicitly called from a JavaScript code.
+    - Automatically executed such as self invoking functions.
+- There are three ways for writing function in JavaScript they are:
+    - Function Declaration
+    - Function Expression
+    - Arrow Function
+
+<b>Function Declaration: </b>
+- Function declaration is also known as function definition.
+- It begins with the keyword 'function' followed by a unique function name, list of parameters enclosed within '()', and list of function statements enclosed within '{}'.
+- The function variables are hoisted, which means that the function can be invoked before the declaration.
+- syntax:
+    ```js
+        function function_name(parameter1, parameter2,..) {
+            statement 1,
+            statement 2,
+            .
+            .
+            statement n
+        }
+    ```
+
+<b>Function Expression: </b>
+- An easy-to-remember rule: the function declaration in a statement always starts with the keyword function. Otherwise it's a function expression.
+- The function expression begins with a keyword 'function', followed by an optional function name, list of parameters enclosed within '()' and followed by list of statements enclosed within '{}'.
+- Thefunction expression creates a function object that can be used in the following situation:
+    - Assigned to a variable as an object:
+        ```js
+            const variable_name = 
+            function optional_funct_name(parameter1, parameter2,..) {
+                statement 1,
+                statement 2,
+                .
+                .
+                statement n
+            }
+        ```
+    - Create a method inside/of an object:
+        ```js
+            sum:
+            function optional_funct_name(parameter1, parameter2,..) {
+                statement 1,
+                statement 2,
+                .
+                .
+                statement n
+            }
+        ```
+    - Use the function as a callback:
+        ```js
+            array.map(function(){.....})
+        ```
+
+<b>Arrow Function: </b>
+- An arrow function is defined using a pair of '()' that contains list of parameters, followed by a fat arrow =>, and list of statements enclosed within '{}'.
+- When we have a single parameter '()' can be ommitted.
+- When we have a single statement '{}' can be ommitted.
+- The arrow function is anonymous but the engine idenftify by the variable name it is holding.
+- Argument object is not available in JavaScript.
+- Syntax:
+    ```js
+        const variable_name = (parameter1, parameter2,...) => {
+            statement 1,
+            statement 2,
+            .
+            .
+            .statement n
+        }
+    ```
+
+<b>Array: </b>
+- Array is a datastructure which allows us to store and manipulate multiple value assigned to a single variable.
+- An array can store values of any data type at a time.
+    - An array is a special king of object.
+    - Since JavaScript is dynamically typed language, allowing arrays to store values of different type.
+- Arrays in JavaScript is zero-indexed.
+- Array can be declared in two ways:
+    - Using Array literal(square brackets):<br>
+        example : const alphabets = ['a','b','c'];
+    - Usimg Array constructore(new Array() method):
+        example : const alphabets =  new Array('a','b','c');
+
+<b>Array methods: </b>
+<details>
+  <summary>Basic Array Methods</summary>
+
+- ***length()***: It returns the length of an array.
+    ```js
+        const numbers = [1,2,3,4,5,34,44,56];
+        console.log(numbers.length);  //returns 8
+    ```
+- ***toString()***: It converts array to a single string seperated by comma.
+    ```js
+        const numbers = [1,2,3,4];
+        console.log(numbers.toString());  //returns 1,2,3,4
+    ```
+- ***at()***: It was introduced in ES2022. It returns an indexed element from an array. 
+    ```js
+        const alphabets = ['a','b','c','d'];
+        console.log(alphabets.at(2)); //returns c
+        // at() method is same as []
+        console.log(alphabets[2]); //returns c
+    ```
+- ***join()***: The join method joins all the elements into a string. It behave just like toString() but in join() we can mention a seperator.
+    ```js
+        // Seperator we are using is *
+        const numbers = [1,2,3,4];
+        console.log(numbers.join('*')); //return 1*2*3*4
+- ***pop()***: It removes the last element from an array and returns the popped out element.
+    ```js
+        const numbers = [1,2,3,4];
+        console.log(numbers.pop()); //returns 4
+    ```
+- ***push()***: It adds the new element to an array at the last and returns the new array length
+    ```js
+        const numbers = [1,2,3,4];
+        console.log(numbers.push(10)); //returns 5
+    ```
+- ***shift()***: It removes the first element from an array, pushes all the other elements to the lower index and returns the shifted out element.
+    ```js
+        const numbers = [1,2,3,4];
+        console.log(numbers.shift()); //returns 1
+        console.log(numbers); //returns [2,3,4]
+    ```
+- ***unshift()***: It adds the new element at the beginning of an array, pushes all the other elements to the higher index and returns the new array length.
+    ```js
+        const numbers = [1,2,3,4];
+        console.log(numbers.unshift(10)); //returns 5
+        console.log(numbers); //returns [10,1,2,3,4]
+    ```
+- ***concat()***: The concat() method doesn't change the existing array but It returns a new array by merging(concatinating) existing arrays. The concat() method can take n number of arguments as well as string
+    ```js
+        const array1 = [1,2,3,4];
+        const array2 = [4,5,6,7];
+        const string = 'concatinated';
+        console.log(array1.concat(array2)); //returns [1,2,3,4,5,6,7];
+        console.log(array1.concat(string)); // returns [1,2,3,4,'concatinated'];
+    ```
+- ***flat()***: Flattening an array is the process of reducing the dimension of an array. It is helpful when we want to convert multidimensional array into one dimensional array. The flat method creates a new array and it doesn't overwrites the existing array
+    ```js
+        const myArr = [[1,2],[3,4],[5,6]];
+        const newArr = myArr.flat();
+        console.log(newArr); // returns [1,2,3,4,5,6]
+    ```
+- ***splice()***
+- ***slice()***
+</details>
+
+<details>
+  <summary>Array Search Methods</summary>
+
+- ***indexOf()***:
+    ```js
+
+    ```
+- ***lastIndexOf()***:
+    ```js
+    
+    ```
+- ***includes()***:
+    ```js
+
+    ```
+- ***find()***:
+    ```js
+
+    ```
+- ***findIndex()***:
+    ```js
+
+    ```
+- ***findLast()***:
+    ```js
+
+    ```
+- ***findLastIndex()***:
+    ```js
+
+    ```
+</details>
