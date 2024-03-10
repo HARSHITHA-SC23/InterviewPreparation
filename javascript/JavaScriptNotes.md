@@ -331,31 +331,112 @@
 <details>
   <summary>Array Search Methods</summary>
 
-- ***indexOf()***:
+- ***indexOf()***: It searches an entire array for the particular value and returns the index of that value in an array. It return -1 if there is no element present. 
+    ```js
+        // syntax
+        array.indexOf(item, start);
+        /*
+            1. item: Required, It represents the value to search the array.
+            2. start: Optional, It represents from where we need to start the search. If there is negative value then the search starts from the end
+        */
+        const numbers = [1,2,2,3,4]
+        console.log(numbers.indexOf(3)+1) //returns 3
+        console.log(numbers.indexOf(7)) //returns -1
+        console.log(numbers.indexOf(2)+1) //returns 2 (first encounter value index)
+    ```
+- ***lastIndexOf()***: It is same as the indexOf() but returns the index of last occurence of the values.
+    ```js
+        const alphabets = ['a','b','c','a','d']
+        console.log(alphabets.lastIndexOf('a')+1) //returns 4
+    ```
+- ***includes()***: It returns true if the element present in the array or else it returns false. It allows us to check for NaN values.
+    ```js
+        const alphabets = ['a','b','c','a','d',NaN]
+        console.log(alphabets.includes('a')) //returns true
+        console.log(alphabets.includes(NaN)) //returns true
+    ```
+- ***find()***: It returns the first element in an array which satisfies the specific condition. the find() methods executes the function for each element until it finds the element which satisfies the condition.
+    ```js
+        function myFunction(value, index, array) {
+        return value > 18;
+        }
+        /* 
+            myFunction takes three values
+            1. value: the element which we will compare against a specific condition.
+            2. index: index of the value
+            3. array: entire array that find is called upon
+        */
+
+        const numbers = [4, 9, 16, 25, 29];
+        let first = numbers.find(myFunction);
+        console.log(first) //returns 25
+    ```
+- ***findIndex()***: It returns the index of the first element in an array which satisfies the specific condition. the find() methods executes the function for each element until it finds the element which satisfies the condition.
+    ```js
+        function myFunction(value, index, array) {
+        return value > 18;
+        }
+        /* 
+            myFunction takes three values
+            1. value: the element which we will compare against a specific condition.
+            2. index: index of the value
+            3. array: entire array that find is called upon
+        */
+
+        const numbers = [4, 9, 16, 25, 29];
+        let first = numbers.find(myFunction);
+        console.log(first) //returns 3
+    ```
+- ***findLast()***: This method starts searching from the end of an array and returns the first elements which satisfies the condition.
+    ```js
+        const temp = [27, 28, 50, 30, 40, 42, 35, 30];
+        let high = temp.findLast(x => x > 40);
+        console.log(high) //returns 42
+    ```
+- ***findLastIndex()***:This method starts searching from the end of an array and returns the index of the first elements which satisfies the condition.
+    ```js
+        const temp = [27, 28, 50, 30, 40, 42, 35, 30];
+        let high = temp.findLast(x => x > 40);
+        console.log(high) //returns 5
+    ```
+</details>
+
+<details>
+  <summary>Array Iteration Methods</summary>
+
+- ***forEach()***: 
     ```js
 
     ```
-- ***lastIndexOf()***:
-    ```js
-    
-    ```
-- ***includes()***:
+- ***map()***: 
     ```js
 
     ```
-- ***find()***:
+- ***flatMap()***: 
     ```js
 
     ```
-- ***findIndex()***:
+    - ***filter()***: 
     ```js
 
     ```
-- ***findLast()***:
+- ***reduce()***: 
     ```js
 
     ```
-- ***findLastIndex()***:
+- ***reduceRight()***: 
+    ```js
+
+    ```
+- ***spread()***: 
+    ```js
+
+    ```
+- ***from()***: 
+    ```js
+
+    ```
+- ***with()***: 
     ```js
 
     ```
