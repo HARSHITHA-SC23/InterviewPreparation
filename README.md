@@ -9,9 +9,16 @@ This repository serves as a journal for my daily learning as I prepare to excel 
 </details>
 
 <details>
+  <summary><b>Python</b></summary>
+
+- [Python Important Topics](python/PythonImportantTopics.md)
+</details>
+
+<details>
   <summary><b>Problem Solving</b></summary>
 
 - [Coding Questions](problem-solving/CodingProblems.md)
+- [Leet Code](problem-solving/leet-code/introduction.md)
 </details>
 
 <details>
