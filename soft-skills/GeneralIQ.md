@@ -11,7 +11,7 @@
 <details>
   <summary><b>Why are you looking to leave your current position?</b></summary><br>
 
-*As a full-stack developer, I'm seeking new opportunities to further enhance my skills and contribute to projects that align more closely with my long-term career goals. My current role has provided valuable experience, but I believe that a new position would allow me to take on fresh challenges and continue growing professionally.*
+*After much consideration, I have decided to leave my current organization for a couple of reasons. Firstly, since the beginning of my career, I have been working in a remote environment, and I believe that now is the right time for me to explore new opportunities and potentially transition into a different work setup. Additionally, while my current role has provided me with valuable experience and helped me discover my inner abilities as a full-stack developer, I strongly believe that learning should not remain static. I am eager to continue growing exponentially, facing new challenges, and expanding my skill set further. I am excited about the possibility of contributing my skills and knowledge to a new team and organization.*
 </details>
 
 <details>
@@ -21,7 +21,7 @@
 
 *Another proud accomplishment was within my first year of industry experience when I was given the opportunity to lead a team as a de facto lead. I took on the responsibility of grooming new developers and leading them to become valuable resources for the organization. It was a rewarding experience to see the team grow and succeed under my guidance.*
 
-*Additionally, I was given the opportunity to lead a project from scratch, which allowed me to demonstrate my project management skills and ability to deliver high-quality solutions on time and within budget. These experiences have not only shaped my skills as a full-stack developer but also taught me valuable leadership and teamwork skills.*
+*Additionally, I was given the opportunity to lead a project from scratch, which allowed me to demonstrate my project management skills and ability to deliver high-quality solutions on time. These experiences have not only shaped my skills as a full-stack developer but also taught me valuable leadership and teamwork skills.*
 </details>
 
 <details>
@@ -47,3 +47,14 @@
 4. *How does the company support work-life balance?*
 
 </details>
+
+## Checklist for Interview preparation
+
+- [ ] JavaScript core 
+- [ ] React JS
+- [ ] Node JS
+- [ ] Python
+- [ ] Rest API 
+- [ ] SQL and NoSQL
+- [ ] Redux, scss/sass, JQuery
+- [ ] Interview questions based on resume and about yourself

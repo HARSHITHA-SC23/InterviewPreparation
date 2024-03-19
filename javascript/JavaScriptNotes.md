@@ -238,7 +238,7 @@
 - When we have a single parameter '()' can be ommitted.
 - When we have a single statement '{}' can be ommitted.
 - The arrow function is anonymous but the engine idenftify by the variable name it is holding.
-- Argument object is not available in JavaScript.
+- Argument object is not available in JavaScript Arrow function.
 - Syntax:
     ```js
         const variable_name = (parameter1, parameter2,...) => {
@@ -253,7 +253,7 @@
 <b>Array: </b>
 - Array is a datastructure which allows us to store and manipulate multiple value assigned to a single variable.
 - An array can store values of any data type at a time.
-    - An array is a special king of object.
+    - An array is a special kind of object.
     - Since JavaScript is dynamically typed language, allowing arrays to store values of different type.
 - Arrays in JavaScript is zero-indexed.
 - Array can be declared in two ways:
@@ -371,7 +371,7 @@
         let first = numbers.find(myFunction);
         console.log(first) //returns 25
     ```
-- ***findIndex()***: It returns the index of the first element in an array which satisfies the specific condition. the find() methods executes the function for each element until it finds the element which satisfies the condition.
+- ***findIndex()***: It returns the index of the first element in an array which satisfies the specific condition. the findIndex() methods executes the function for each element until it finds the element which satisfies the condition.
     ```js
         function myFunction(value, index, array) {
         return value > 18;
@@ -384,7 +384,7 @@
         */
 
         const numbers = [4, 9, 16, 25, 29];
-        let first = numbers.find(myFunction);
+        let first = numbers.findIndex(myFunction);
         console.log(first) //returns 3
     ```
 - ***findLast()***: This method starts searching from the end of an array and returns the first elements which satisfies the condition.
@@ -416,7 +416,7 @@
     ```js
 
     ```
-    - ***filter()***: 
+- ***filter()***: 
     ```js
 
     ```
