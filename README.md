@@ -15,6 +15,11 @@ This repository serves as a journal for my daily learning as I prepare to excel 
 </details>
 
 <details>
+  <summary><b>React JS</b></summary>
+
+- [React JS Interview Questions](react-js/ReactJsIQ.md)
+</details>
+<details>
   <summary><b>Problem Solving</b></summary>
 
 - [Coding Questions](problem-solving/CodingProblems.md)
@@ -24,5 +29,6 @@ This repository serves as a journal for my daily learning as I prepare to excel 
 <details>
   <summary><b>Interpersonal skills and Presentation Skills</b></summary>
 
+- [General Interview Question](soft-skills/GeneralIQ.md)
 - [Mindfullness](soft-skills/MindFullness.md)
 </details>
