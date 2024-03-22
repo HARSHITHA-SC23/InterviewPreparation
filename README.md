@@ -4,31 +4,31 @@ This repository serves as a journal for my daily learning as I prepare to excel 
 <details>
   <summary><b>JavaScript</b></summary>
 
-- <a href='./javascript/JavaScriptNotes'>JavaScript Notes</a>
-- <a href='./javascript/JavaScriptIQ'>JavaScript Interview Questions</a>
+- [JavaScript Notes](javascript/JavaScriptNotes.md)
+- [JavaScript Interview Questions](javascript/JavaScriptIQ.md)
 </details>
 
 <details>
   <summary><b>Python</b></summary>
 
-- <a href='./python/PythonImportantTopics'>Python Important Topics</a>
+- [Python Important Topics](python/PythonImportantTopics.md)
 </details>
 
 <details>
   <summary><b>React JS</b></summary>
 
-- <a href='./react-js/ReactJsIQ'>React JS Interview Questions</a>
+- [React JS Interview Questions](react-js/ReactJsIQ.md)
 </details>
 <details>
   <summary><b>Problem Solving</b></summary>
 
-- <a href='./problem-solving/CodingProblems'>Coding Questions</a>
-- <a href='./problem-solving/leet-code/introduction'>Leet Code</a>
+- [Coding Questions](problem-solving/CodingProblems.md)
+- [Leet Code](problem-solving/leet-code/introduction.md)
 </details>
 
 <details>
   <summary><b>Interpersonal skills and Presentation Skills</b></summary>
 
-- <a href='./soft-skills/GeneralIQ'>General Interview Question</a>
-- <a href='./soft-skills/MindFullness'>Mindfullness</a>
+- [General Interview Question](soft-skills/GeneralIQ.md)
+- [Mindfullness](soft-skills/MindFullness.md)
 </details>
