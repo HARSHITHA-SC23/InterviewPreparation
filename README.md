@@ -4,32 +4,31 @@ This repository serves as a journal for my daily learning as I prepare to excel 
 <details>
   <summary><b>JavaScript</b></summary>
 
-- <a href='./javascript/JavaScriptIQ'>JavaScript Notes</a>
-- [JavaScript Notes](#javascript/JavaScriptNotes.md)
-- [JavaScript Interview Questions](javascript/JavaScriptIQ.md)
+- <a href='./javascript/JavaScriptNotes'>JavaScript Notes</a>
+- <a href='./javascript/JavaScriptIQ'>JavaScript Interview Questions</a>
 </details>
 
 <details>
   <summary><b>Python</b></summary>
 
-- [Python Important Topics](python/PythonImportantTopics.md)
+- <a href='./python/PythonImportantTopics'>Python Important Topics</a>
 </details>
 
 <details>
   <summary><b>React JS</b></summary>
 
-- [React JS Interview Questions](react-js/ReactJsIQ.md)
+- <a href='./react-js/ReactJsIQ'>React JS Interview Questions</a>
 </details>
 <details>
   <summary><b>Problem Solving</b></summary>
 
-- [Coding Questions](problem-solving/CodingProblems.md)
-- [Leet Code](problem-solving/leet-code/introduction.md)
+- <a href='./problem-solving/CodingProblems'>Coding Questions</a>
+- <a href='./problem-solving/leet-code/introduction'>Leet Code</a>
 </details>
 
 <details>
   <summary><b>Interpersonal skills and Presentation Skills</b></summary>
 
-- [General Interview Question](soft-skills/GeneralIQ.md)
-- [Mindfullness](soft-skills/MindFullness.md)
+- <a href='./soft-skills/GeneralIQ'>General Interview Question</a>
+- <a href='./soft-skills/MindFullness'>Mindfullness</a>
 </details>
