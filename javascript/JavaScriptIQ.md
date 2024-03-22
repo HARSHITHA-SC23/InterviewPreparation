@@ -1,5 +1,8 @@
 # This file contains JavaScript Interview questions, their corresponding answers
 
+- [JavaScript Website to understand callstack webapis callback](http://latentflip.com/loupe/)
+- [How JavaScript works](https://dev.to/bipinrajbhar/how-javascript-works-under-the-hood-an-overview-of-javascript-engine-heap-and-call-stack-1j5o)
+
 ## Basics of JavaScript
 
 1. What is JavaScript?
@@ -31,10 +34,33 @@
 
         console.log(add5(2)); // 7
         console.log(add10(2)); // 12
+
+        // Data encapsulation example
+        function createCounter() {
+            let count = 0; // This variable is private to the createCounter function
+
+            function increment() {
+                count++;
+                console.log("Count is now: ", count);
+            }
+            function decrement() {
+                count--;
+                console.log("Count is now: ", count);
+            }
+            return {
+                increment,
+                decrement
+            };
+        }
+
+        const counter = createCounter();
+        counter.increment(); // Output: Count is now:  1
         ```
     - In the above code we have a function "makeAdder" which acts as a function factory.
     - It takes a single argument and return one function, which in turn takes another argument y and returns the sum of x and y.
     - In the above example code the function factory creates two new function, one that add 5 to the argument and another 10.
+    - One of the usecase for using closure function is to create a callback function where a function is passed as an argument. The closure helps callback to access the surrounding context providing  more flexibility.
+    - Another usecase for using closure is that it allows us to create a private variables and methods hiding them from the global scope. This helps in preventing naming conflicts and provides a way to implement data hiding.
 
 5. What is the difference between == and ===?
     - ==: It is known as comparison/equality operator. It is used to check equality between two variables, but it ignores the datatype of the variable. It compares the variables after doing the necessary type conversion.
@@ -63,8 +89,9 @@
         - Use function expression when we want to limit the availability of the function.
         - Function expression are not hoisted.
 
-9. How does the setTimeout function work?
+9. How does the setTimeout and setImmediate() function work?
     - The global setTimeout() method executes a function or piece of code once the timer expires.
+    - setImmediate() is typically used when you want to execute a callback as soon as possible, but after the current operation completes, without blocking the event loop.
 
 ## Functions and Scopes
 
@@ -79,6 +106,7 @@
     - It doesnot depend on any state or data change during the execution of the program.
 
 3. Describe the differences between function.call, function.apply, and function.bind.
+    - function.call, function.apply, and function.bind all are used to control the context (the value of this) and arguments passed to a function when it is invoked.
     - function.call:
         - The call method is used to call a function and specify "this" value for the function.
         - It takes 2 arguments: The value that needs to be used as the "this" value inside the function and optional list of arguments that needs to be passed.
@@ -129,7 +157,7 @@
         - The changes to the shallow copy effects the orginal copy.
     
     - Deep copy:
-        - A deep copy creates completely new array or an object and copies both the array and the data.
+        - A deep copy creates completely new array or an object and copies both the address and the data.
         - The changes to the deep copy won't effect the orginal copy because it doesn't share any data with the orginal array.
 
 6. How does the call stack work in JavaScript?
@@ -139,6 +167,38 @@
 7. Explain the concept of function currying.
     - Currying is functional programming technique that breaks down the function which takes multiple arguments into series of function that takes one argument each.
     - Each function returns another function until the final result is achieved.
+    - ```js
+        // case 01: for finite number of arguments
+        function add(x) {
+            return function(y) {
+                return function(z){
+                    return x+y+z
+                }
+            }
+        }
+
+        console.log(add(2)(3)(4)) //9
+
+        //case 02: for n number of arguments
+        function add(a){
+            return function(b){
+                if(b){
+                    return add(a+b)
+                }
+                return a
+            }
+        }
+        console.log(add(2)(3)(4)(5)()) //14, () necessary to invoke the final call or else it will return anoymous function
+
+        //case 03: two arguments in a single call
+        function add(a,b){
+            return function(c,d){
+                return a+b+c+d
+            }
+        }
+        console.log(add(2,3)(4,5)) //14
+
+        ```   
 
 8. What is callback hell and how to over come?
     - Callback hell is nested callbacks stacked one after the another forming a pyramid.
@@ -184,3 +244,22 @@
 8. How do you handle asynchronous code in JavaScript?
     - then/catch method
     - async/await
+
+## Important Questions
+
+1. Is JavaScript single/multithreade and explain why
+    - JavaScript is a single threaded language (It means it can run only one thing at a time), It is synchronous in nature.It has one call stack and one memory heap.
+    - It is single threaded because it executes code in a sequential manner, it must finish one piece of code befor moving onto the next.
+
+2. How JavaScript handles async/multithread operations being a single thread language.
+    - It handle asynchronous operations via callback queue and the event loop
+    - Async programming allows multiple process to run parallelly without interfering the main thread(it is where browser processes user events).
+    - Asynchronous code can be handled in three ways:
+        - *promises*: They enable us to create code that runs after a certain period of time or when a ceratin condition is satisfied.
+        - *async/await*: It helps you write more concise and readable code that will execute after a set period of time or when a set condition is met.
+        - *callbacks*: Callbacks allows asynchronous code to be written in synchronous manner.
+
+3. What is event loop and event queue?
+    - Event queue is a special queue, which keeps tack of all the functions queues which needed to be pushed into the callstack.
+    The event queue is responsible for sending new functions to the track for processing.
+    - Event loop waits for the function stack to be empty, once the call stack is empty this will push the first function from the event queue to the call stack, and this way the function will be executed. Thus event loop works in a cyclic manner where it continously checks whether the call stack is empty or not.
