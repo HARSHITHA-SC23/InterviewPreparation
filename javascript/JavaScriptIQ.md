@@ -1,7 +1,7 @@
 # This file contains JavaScript Interview questions, their corresponding answers
 
-[JavaScript Website to understand callstack webapis callback](http://latentflip.com/loupe/)
-[How JavaScript works](https://dev.to/bipinrajbhar/how-javascript-works-under-the-hood-an-overview-of-javascript-engine-heap-and-call-stack-1j5o)
+- [JavaScript Website to understand callstack webapis callback](http://latentflip.com/loupe/)
+- [How JavaScript works](https://dev.to/bipinrajbhar/how-javascript-works-under-the-hood-an-overview-of-javascript-engine-heap-and-call-stack-1j5o)
 
 ## Basics of JavaScript
 
