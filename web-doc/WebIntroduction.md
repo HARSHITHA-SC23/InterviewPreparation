@@ -75,7 +75,7 @@
 - Protocol:
 - URL
 
-**Behind the Scene**
+### Behind the Scene
 - ![alt text](./images/dns.png)
 - Client type the URL in the browser : `https://www.github.com/`
 - The browser parses the information contained inb the URL:
@@ -93,11 +93,9 @@
     - The webserver receives the request and looks for the HTML page if the page exists the web server send the response back or else it will send HTTP 404 error message (Page not found).
     Then the browser creates a DOM structure for the recieved HTML page and renders it.
 
+### Client-Server Model & Scale a Simple Web Application
 
-<details>
-  <summary><b>Client-Server Model & Scale a Simple Web Application</b></summary>
-
-**Client-Server model**
+### Client-Server model###
 - The client server model describes the communication between two computing entities over a network.
 - Client are the ones requesting resource or the service by making a request through URL.
 - Servers are the one that stores the web pages and delivers them to client when they are requested.
@@ -116,7 +114,7 @@
         - Instead it communicates with the application server which in turn communicates with the database system. 
     - n-tier architecture
 
-**How to scale a web application**
+### How to scale a web application
 
 - A single server don't have power to handle the thpousands or millions of requests coomming from multiple visitors.
 - Application scalling involves optimizing the apps architecture, infrastructure and resource. It aims at handling the increased loads without comprimising the user experience or performance.
@@ -143,7 +141,7 @@
         - Horizontal scaling involves adding more instance of the server to distribute the load.
         - Load balancer can be used to distribute the traffic evenly amongst the instances.
 
-**How Load balancer works**
+### How Load balancer works
 - Consider we have multiple server having its own IP address and we need to distribute the traffic amongst the backend server this can be done by using Load balancer.
 - The load balancer acts as a traffic cop in the web that routes the clients request across the server in a more efficient and fastest manner possible.
 - when we have multiple server instance we cannot broadcast all the IP address, so we create a virtual IP address which we publicly broadcast to the client.
@@ -153,11 +151,10 @@
 - The load balancer figures out which traffic needs to send to which server using a algorithms, one of the popular algorithm called Round Robin.
 - We choose round robin if all the server have same configuration in terms of processing speed and memory.
 - With another algorithm, Least Connections, the next request is sent to the server with the least number of active connections.
-</details>
-<details>
-  <summary><b>HTTP</b></summary>
 
-**Understanding HTTP**
+### HTTP
+
+### Understanding HTTP
 - In client-server model, clients and server exchange message in a request-response manner.
 - Client sends a request and server response.
 - In order for this to carry on the client-server must follow certain rules and this protocol is known as HTTP.
@@ -174,7 +171,7 @@
 - SSL is a security protocol that allows the client and server to communicate across a network in a secure way.
 - The client typically indicates whether it needs a TLS/SSL connection by using a special port number: 443 or else the port number:80 for HTTP.
 
-**HTTP Methods**
+### HTTP Methods
 - HTTP defines a set of request methods that define what action needs to be performed when the request is made.
 - The different HTTP methods are:
     - GET: It should only retrive data.
@@ -183,5 +180,3 @@
     - PATCH: This method is used to apply partial modification to the resource.
     - DELETE: This method deletes the specified resource.
     - HEAD: It is similar to GET, It should only retrieve data without the response body.
-
-</details>
