@@ -35,10 +35,9 @@
 
 ## Understanding in and out of the web!!
 
-<details>
-  <summary><b>How the web works?</b></summary>
+### How the web works?
 
-## Parts of the Web: 
+### Parts of the Web: 
 - Before we start understanding how the web works we need to understand the different parts of the web.
 - Client:
     - The application which runs on our system and connected to the internet
@@ -93,7 +92,8 @@
     - The client or the web browser sends an HTTPS request for the server rquesting the main HTML page of www.github.com 
     - The webserver receives the request and looks for the HTML page if the page exists the web server send the response back or else it will send HTTP 404 error message (Page not found).
     Then the browser creates a DOM structure for the recieved HTML page and renders it.
-</details>
+
+
 <details>
   <summary><b>Client-Server Model & Scale a Simple Web Application</b></summary>
 
