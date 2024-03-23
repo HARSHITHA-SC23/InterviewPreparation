@@ -1,47 +1,12 @@
 # InterviewPreparation
 This repository serves as a journal for my daily learning as I prepare to excel in company interviews.
 
-<details>
-  <summary><b>JavaScript</b></summary>
-
-- [JavaScript Notes](./javascript/JavaScriptNotes.md)
-- [JavaScript Interview Questions](./javascript/JavaScriptIQ.md)
-</details>
-
-<details>
-  <summary><b>Python</b></summary>
-
-- [Python Important Topics](./python/PythonImportantTopics.md)
-</details>
-
-<details>
-  <summary><b>React JS</b></summary>
-
-- [React JS Interview Questions](./react-js/ReactJsIQ.md)
-</details>
-
-<details>
-  <summary><b>Problem Solving</b></summary>
-
-- [Coding Questions](./problem-solving/CodingProblems.md)
-- [Leet Code](./problem-solving/leet-code/introduction.md)
-</details>
-
-<details>
-  <summary><b>Web Documentation</b></summary>
-
-- [Web Introduction](./web-doc/WebIntroduction.md)
-</details>
-
-<details>
-  <summary><b>Company preparation</b></summary>
-
-- [Google Road Map](./company-preparation/GoogeRoadMap.md)
-</details>
-
-<details>
-  <summary><b>Interpersonal skills and Presentation Skills</b></summary>
-
-- [General Interview Question](./soft-skills/GeneralIQ.md)
-- [Mindfullness](./soft-skills/MindFullness.md)
-</details>
+| # | Topic | Links | 
+|----|----|----|
+| 01 | JAVASCRIPT | &bull;[JavaScript Notes](./javascript/JavaScriptNotes.md)<br>&bull;[JavaScript Interview Questions](./javascript/JavaScriptIQ.md) |
+| 02 | PYTHON | &bull;[Python Important Topics](./python/PythonImportantTopics.md) |
+| 03 | React JS | &bull;[React JS Interview Questions](./react-js/ReactJsIQ.md) |
+| 04 | PROBLEM SOLVING | &bull;[Coding Questions](./problem-solving/CodingProblems.md)<br>&bull;[Leet Code](./problem-solving/leet-code/introduction.md) |
+| 05 | WEB DOCUMENTATION | &bull;[Web Introduction](./web-doc/WebIntroduction.md) |
+| 06 | COMPANY PREPARATION | &bull;[Google Road Map](./company-preparation/GoogeRoadMap.md) |
+| 07 | INTERPERSONAL SKILLS & PRESENTATION SKILLS | &bull;[General Interview Question](./soft-skills/GeneralIQ.md)<br>&bull;[Mindfullness](./soft-skills/MindFullness.md) |
