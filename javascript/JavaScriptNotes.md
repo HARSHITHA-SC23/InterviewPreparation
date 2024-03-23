@@ -263,8 +263,8 @@
         example : const alphabets =  new Array('a','b','c');
 
 <b>Array methods: </b>
-<details>
-  <summary>Basic Array Methods</summary>
+
+#### Basic Array Methods
 
 - ***length()***: It returns the length of an array.
     ```js
@@ -326,10 +326,8 @@
     ```
 - ***splice()***
 - ***slice()***
-</details>
 
-<details>
-  <summary>Array Search Methods</summary>
+#### Array Search Methods
 
 - ***indexOf()***: It searches an entire array for the particular value and returns the index of that value in an array. It return -1 if there is no element present. 
     ```js
@@ -399,10 +397,8 @@
         let high = temp.findLast(x => x > 40);
         console.log(high) //returns 5
     ```
-</details>
 
-<details>
-  <summary>Array Iteration Methods</summary>
+#### Array Iteration Methods
 
 - ***forEach()***: 
     ```js
@@ -440,4 +436,3 @@
     ```js
 
     ```
-</details>
