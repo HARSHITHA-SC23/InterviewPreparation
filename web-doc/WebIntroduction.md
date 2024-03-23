@@ -1,44 +1,43 @@
 # This document serves as a comprehensive guide to essential web technologies, offering a foundational understanding for developers
 
 ## WWW - World Wide Web
-    - It is often referred as Web.
-    - It is a system of interconnected webpages written in hypertext via the internet.
-    - The key components of WWW are:
-        - Hypertext: 
-            - The web is based on the concept of Hypertext, which allows user to navigate between the documents(web pages) using hyper links. 
-            - Hyper Text Markup Language is the standard used for creating the webpages.
-        - Uniform Resource Locator (URL): 
-            - URL is the unique address of a website on the web.
-            -  The URL is composed of different parts:
-                - ![alt text](./images/url.png)
-        - Web Browser:
-            - It is a software application used to access and view web pages.
-            - web browsers play a crucial role in rendering web pages by interpreting and processing HTML for structure, CSS for styling, and JavaScript for interactivity, providing users with a rich and dynamic browsing experience.
-        - Web Server:
-            - It is a computer system that stores the web pages and deliver them to web browser upon request.
-            - Examples of web server are Apache, Nginx etc.,
-        - Web protocol:
-            - The widely used protocols to create communication between clients(such as web browser) and server.
-                - HTTP: Hyper Text Transfer Protocol
-                - HTTPS: Hyper Text Transfer Protocol Secure
-                - SMTP: Sinple Mail Transfer Protocol
-                - FTP: File Transfer Protocol
-                - DNS: Domain Name System
-                - IMAP
-                - POP3
-        - Web Standard:
-            - The web is built on open standards devloped by W3C (Worl Wide Web consortium) and other organization.
-            - These standards ensure interoperability and accessibility of web content across different web browser.
-        - Web Development
-            - Web development involves creating and maintaining websites and web applications.
-            - It includes tasks such as designing web pages, writing HTML, CSS, and JavaScript code, and optimizing websites for performance and accessibility.
+- It is often referred as Web.
+- It is a system of interconnected webpages written in hypertext via the internet.
+- The key components of WWW are:
+    - Hypertext: 
+        - The web is based on the concept of Hypertext, which allows user to navigate between the documents(web pages) using hyper links. 
+        - Hyper Text Markup Language is the standard used for creating the webpages.
+    - Uniform Resource Locator (URL): 
+        - URL is the unique address of a website on the web.
+        -  The URL is composed of different parts:
+            - ![alt text](./images/url.png)
+    - Web Browser:
+        - It is a software application used to access and view web pages.
+        - web browsers play a crucial role in rendering web pages by interpreting and processing HTML for structure, CSS for styling, and JavaScript for interactivity, providing users with a rich and dynamic browsing experience.
+    - Web Server:
+        - It is a computer system that stores the web pages and deliver them to web browser upon request.
+        - Examples of web server are Apache, Nginx etc.,
+    - Web protocol:
+        - The widely used protocols to create communication between clients(such as web browser) and server.
+            - HTTP: Hyper Text Transfer Protocol
+            - HTTPS: Hyper Text Transfer Protocol Secure
+            - SMTP: Sinple Mail Transfer Protocol
+            - FTP: File Transfer Protocol
+            - DNS: Domain Name System
+            - IMAP
+            - POP3
+    - Web Standard:
+        - The web is built on open standards devloped by W3C (Worl Wide Web consortium) and other organization.
+        - These standards ensure interoperability and accessibility of web content across different web browser.
+    - Web Development
+        - Web development involves creating and maintaining websites and web applications.
+        - It includes tasks such as designing web pages, writing HTML, CSS, and JavaScript code, and optimizing websites for performance and accessibility.
 
 ## Understanding in and out of the web!!
 
 <details>
   <summary><b>How the web works?</b></summary>
-
-
+  
 **Parts of the Web**: Before we start understanding how the web works we need to understand the different parts of the web.
 - Client:
     - The application which runs on our system and connected to the internet
