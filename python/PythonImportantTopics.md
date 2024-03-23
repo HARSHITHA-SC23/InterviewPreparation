@@ -1,8 +1,7 @@
 # This document covers important Python topics from beginner to advanced levels.
 
 
-<details>
-  <summary>Iterate over list</summary>
+### Iterate over list
   
   - ***using for loop:***
     - In python there is no C style 'for' loop, i.e., `for(int i=0;i<n;i++)`
@@ -112,11 +111,7 @@
             result = map(addition, numbers)
             print(list(result)) #returns [2, 4, 6, 8]
         ```
-</details>
-
-
-<details>
-  <summary>Hash Map</summary>
+### Hash Map
 
 - **Introduction:**
     - Hashmap is also known as dictionary. It is a data structure that stores the information in the key value pairs for efficient retrieval.
@@ -178,4 +173,3 @@
                     #returns all the key-value/item [('karnataka', [['banglore', 'mysore', 'kodagu']])] as a lsit
                     print(city_list) 
                 ```
-</details>

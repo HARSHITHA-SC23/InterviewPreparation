@@ -1,16 +1,15 @@
 # This file contains fundamental coding questions, their corresponding answers, and important points to remember
 
-<details>
-  <summary><b>Swap two numbers</b></summary>
+## `Swap two numbers`
 
-## Algorithm
+#### Algorithm
 
 - Create a temporary variable temp
 - Assign a to temp variable
 - Assign b to a
 - Assign temp to b
 
-## Javascript
+#### Javascript
 
   ```js
   function swapIterator(a,b) {
@@ -24,7 +23,7 @@
   swapIterator(10, 30);
   ```
 
-## Python
+#### Python
 
   ````py
   def swapIterator(a,b):
@@ -37,106 +36,90 @@
   swapIterator(10,30);
   ````
 
-</details>
+## `Sort an array without using library`
 
-<details>
-  <summary><b>Sort an array without using library</b></summary>
+#### Most common Sorting Algorithm
 
-## Most common Sorting Algorithm
+  - **Bubble Sort**
 
-  - <details>
-      <summary> <b>Bubble Sort</b></summary>
-
-      ## Javascript
+      #### Javascript
       
       ```js
 
       ```
 
-      ## Python
+      #### Python
 
       ````py
 
       ````    
-  - <details>
-      <summary> <b>Insertion Sort</b></summary>
+  - **Insertion Sort**
       - It is a simple sorting algorithm. 
       
-      ## Javascript
+      #### Javascript
       
       ```js
 
       ```
 
-      ## Python
+      #### Python
 
       ````py
 
       ````    
-    </details>
     
-  - <details>
-      <summary> <b>Selection Sort</b></summary>
+  - **Selection Sort**
       
-      ## Javascript
+      #### Javascript
       
       ```js
 
       ```
 
-      ## Python
+      #### Python
 
       ````py
 
       ````    
-    </details>
     
-  - <details>
-      <summary> <b>Quick Sort</b></summary>
+  - **Quick Sort**
       
-      ## Javascript
+      #### Javascript
       
       ```js
 
       ```
 
-      ## Python
+      #### Python
 
       ````py
 
       ````    
-    </details>
     
-  - <details>
-      <summary> <b>Merge Sort</b></summary>
+  - **Merge Sort**
       
-      ## Javascript
+      #### Javascript
       
       ```js
 
       ```
 
-      ## Python
+      #### Python
 
       ````py
 
-      ````    
-    </details>
+      ````
     
-  - <details>
-      <summary> <b>Heap Sort</b></summary>
+  - **Heap Sort**
       
-      ## Javascript
+      #### Javascript
       
       ```js
 
       ```
 
-      ## Python
+      #### Python
 
       ````py
 
       ````    
-    </details>
-  </details>
-</details>
