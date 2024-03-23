@@ -37,8 +37,9 @@
 
 <details>
   <summary><b>How the web works?</b></summary>
-  
-**Parts of the Web**: Before we start understanding how the web works we need to understand the different parts of the web.
+
+## Parts of the Web: 
+- Before we start understanding how the web works we need to understand the different parts of the web.
 - Client:
     - The application which runs on our system and connected to the internet
     - Chrome, firefox etc., are the example of client.
