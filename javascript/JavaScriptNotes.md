@@ -72,6 +72,7 @@
 
 <b>Operators: </b>JavaScript operators are the symbols that are used to perform operations on the operands. The different types of operators are:
 - Arithmetic Operators:
+
     | Operator | Description           | Example              |
     |----------|-----------------------|----------------------|
     | +        | Addition              | &bull;10 + 20 = 30<br>&bull;       a+b = ab(concatenate in terms of string)      |
@@ -83,6 +84,7 @@
     | ++       | Increment             | var a = 10; a++; Now a = 11 |
     | --       | Decrement             | var a = 10; a--; Now a = 9  |
 - Comparision Operators:
+
     | Operator | Description                 | Example            |
     |----------|-----------------------------|--------------------|
     | ==       | Is equal to                 | &bull;10=='10' = true<br>&bull;10 == 20 = false   |
@@ -94,12 +96,14 @@
     | <        | Less than                   | 20 < 10 = false    |
     | <=       | Less than or equal to       | 20 <= 10 = false   |
 - Logical Operators:
+
     | Operator | Description   | Example                   |
     |----------|---------------|---------------------------|
     | &&       | Logical AND   | (10 == 20 && 20 == 33) = false |
     | \|\|     | Logical OR    | (10 == 20 \|\| 20 == 33) = false |
     | !        | Logical Not   | !(10 == 20) = true         |
 - Assignment Operators:
+
     | Operator | Description         | Example                  |
     |----------|---------------------|--------------------------|
     | =        | Assign              | 10 + 10 = 20             |
@@ -109,6 +113,7 @@
     | /=       | Divide and assign   | var a = 10; a /= 2; Now a = 5 |
     | %=       | Modulus and assign  | var a = 10; a %= 2; Now a = 0 |
 - Special Operators:
+
     | Operator | Description                                                                                                     |
     |----------|-----------------------------------------------------------------------------------------------------------------|
     | ?:       | Conditional Operator returns value based on the condition. It is like if-else.                                |

@@ -12,6 +12,7 @@
 ### Simple selector
 - Selects the HTML element based on the element, id, class.
 - Simple selector can be classified in to following:
+
     | Selector Name        | Symbol      | Example       | Definition                                                                 |
     |----------------------|-------------|---------------|----------------------------------------------------------------------------|
     | Element Selector     | `tag name`  | `p`           | Selects HTML elements based on the element name (e.g., paragraph `<p>`).   |
@@ -24,6 +25,7 @@
 - Combinator selector are used to select the element based on their relationship with the other HTML element.
 - Two or more simple selector can be combined by using any of the combinator selector.
 - Combinator selector can be classified into following:
+
     | Selector Name        | Symbol      | Example       | Definition                                                                 |
     |----------------------|-------------|---------------|----------------------------------------------------------------------------|
     | Descendent selector | `space selector` | .main p | &bull; The descendant selector matches all the element that are descendent of the specified element<br>&bull; Example: select all the `p` tag element under classname `main` |
@@ -35,6 +37,7 @@
 - A pseudo class element is used to select a special state of an element.
 - It allows us to style the element based on the element state or position in the document.
 - pseudo-class selector are defined using `:` and defined next to the simple selector.
+
     | Selector            | Example           | Description                                                   |
     |---------------------|-------------------|---------------------------------------------------------------|
     | :active             | a:active          | Selects the active link                                       |
@@ -73,6 +76,7 @@
 - The pseudo-element is used style the specific part the element
 - The pseudo-class target special state of an element where as pseudo-element targets specific part of the element.
 - The pseudo-element is denoted by `::`.
+
     | Selector          | Example        | Description                                                    |
     |-------------------|----------------|----------------------------------------------------------------|
     | ::after           | p::after       | Insert something after the content of each `<p>` element       |
@@ -84,6 +88,7 @@
 
 ### Attribute selector
 - It is used to style the HTML elements that have a specific attributes or attribute value.
+
     | Selector              | Example                 | Example description                                                                         |
     |-----------------------|-------------------------|--------------------------------------------------------------------------------------------|
     | [attribute]           | [target]                | Selects all elements with a target attribute                                                |
@@ -100,6 +105,7 @@
 - The display property is used to control the layout of the element.
 - It is used to specify how the element needs to be displayed in a web page.
 - The commonly used Display values are:
+
     | value              | Example                 | description                                                                        |
     |-----------------------|-------------------------|--------------------------------------------------------------------------------------------|
     | inline | `<span>, <a>, <em>, <b>,etc` |&bull; The inline element takes the required width only. <br>&bull;It doesn't force the line break<br>&bull; For inline element we cannot set the widht and height |
@@ -114,6 +120,7 @@
 - Once elements are positioned using position property, we then use top, bottom, left, and right properties to position.
 - Statis position element is not effected by top, bottom, left, right.
 - The position property has following values:
+
     | value              | description |
     |-----------------------|------------------------------|
     | Static | &bull; HTML elements are by default positioned to `statis`<br>&bull; Static elements are not effected by any other properties(top, bottom, left, right)<br>&bull; The static positioned element is always positioned according to the normal flow of the webpage |
@@ -133,6 +140,7 @@
 - The absolute units of measurements are fixed and do not change absed on the viewport or the user preference.
 - They are used when we need to define a specific size that doesn't change.
 - The absolute length units are:
+
     | Unit   | Unit Name | Explanation                                                                                   |
     |--------|-----------|-----------------------------------------------------------------------------------------------|
     | px     | Pixels    | &bull; One pixel is equal to one dot on the screen.<br>&bull; It is commonly used for defining precise measurements in web design. |
@@ -150,6 +158,7 @@
     - size of the parent element
 - Relative units are useful for creating responsive and more flexible on different screen sizes.
 - The relative length units are:
+
     | Unit   | Explanation                                                                                           |
     |--------|-------------------------------------------------------------------------------------------------------|
     | em     | &bull; Equal to the computed font size of the element.<br>&bull; For example, if the font size is 16px, 1em is 16px.   |
