@@ -121,8 +121,8 @@
 - Statis position element is not effected by top, bottom, left, right.
 - The position property has following values:
 
-    | value              | description |
-    |-----------------------|------------------------------|
+    | value              | description                                                                        |
+    |-----------------------|--------------------------------------------------------------------------------------------|
     | Static | &bull; HTML elements are by default positioned to `statis`<br>&bull; Static elements are not effected by any other properties(top, bottom, left, right)<br>&bull; The static positioned element is always positioned according to the normal flow of the webpage |
     | relative | &bull; The relative positioned elements are positioned to their normal flow in the document flow.<br>&bull; This means the properties TBLR helps to move the element from its orginal position without affecting the other elements in a page.<br>&bull; Other content will not be adjusted to fit into any gap left by the element | 
     | fixed | &bull; Elements with fixed position property is removed from the normal document flow and positioned relative to the viewport.<br>&bull; The fixed element always stays in the same place even if the page is scrolled<br>&bull; The properties TBLR are used to position the element.<br>&bull; Since it is removed from the normal flow of the document it does not occupies space in the layout and hence it does not leave a gap in the page where it was located.| 
