@@ -95,7 +95,7 @@
 
 ### Client-Server Model & Scale a Simple Web Application
 
-### Client-Server model###
+### Client-Server model
 - The client server model describes the communication between two computing entities over a network.
 - Client are the ones requesting resource or the service by making a request through URL.
 - Servers are the one that stores the web pages and delivers them to client when they are requested.

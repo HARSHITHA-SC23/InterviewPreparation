@@ -214,7 +214,7 @@
 1. What is the DOM?
     - The DOM stands for Document Object Model.
     - DOM is a programming interface for HTML
-    - It defines the logical structure of the object and the a document is accessed and manipulated.
+    - It defines the logical structure of the object and how a document is accessed and manipulated.
     - It is called a logical structure because DOM doesn't define any relation between the object.
 
 2. How do you select elements with Vanilla JavaScript?
