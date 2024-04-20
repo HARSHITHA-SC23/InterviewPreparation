@@ -1,6 +1,6 @@
 # This document outlines the interview preparation roadmap for Google.
 
-## First-attempt
+## First-attempt (Rejected in second round)
 
 ### Areas to concentrate for technical round
 
@@ -18,13 +18,13 @@
     - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
 - Networking - 0.5 days : 
 
-#### Second-round - 7.5days
+#### Second-round - 7.5days (* - asked in round topics)
 
 - Time and space complexity
 - Optimal and sub-optimal approach
 - Strings related problems
 - All type of data-structure and their implementation and operations
-- Implementation of timed map
+- *Implementation of timed map
 
 remainng days
 - array, stack, queue - 1.5 day
