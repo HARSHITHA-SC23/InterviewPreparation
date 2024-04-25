@@ -118,7 +118,7 @@
 ### CSS Position
 - The position property is used to control the position of an element relative to its normal position in the document flow.
 - Once elements are positioned using position property, we then use top, bottom, left, and right properties to position.
-- Statis position element is not effected by top, bottom, left, right.
+- Static positioned element is not effected by top, bottom, left, right.
 - The position property has following values:
 
     | Value    | Description                                                                                                                                                                                                                                 |
@@ -138,7 +138,7 @@
     - Others
 
 ### Absolute length units
-- The absolute units of measurements are fixed and do not change absed on the viewport or the user preference.
+- The absolute units of measurements are fixed and do not change based on the viewport or the user preference.
 - They are used when we need to define a specific size that doesn't change.
 - The absolute length units are:
 
@@ -174,3 +174,78 @@
 - Percentage units are commonly used for creating responsive website.
 - Percentage units are represented using `%`.
 - Percentage units are used to create a layout that adjust dynamically based on the size of the viewport.
+
+## Box Model
+- The css box model is a fundamental concept in css that defines the design and layout of the element in the webpage.
+- The Box model consists of four main parts:
+    - Content:
+        - This is the actual content of the element.
+        - The size of the content is defined by width and the height.
+    - Padding:
+        - Padding is the space between the content and the border of the element.
+        - It helps to create a space around the element seperating the content from the border.
+    - border:
+        - The border surroounds the padding and the content.
+        - Border can be styled using the properties: border-width, border-style, border-color etc., properties.
+    - margin:
+        - Margins are the space outside the border of the element.
+        - They helps us to create a space between the elements, controlling the layout of the page.
+
+## Advance Layout
+
+### Flex box Layout
+- Flexbox is a layout model in CSS, that allows us to create complex and dynamic layouts that adapts to different screen sizes.
+- Flexbox allows us to create 1d layouts
+- Flexbox allows us to arrange the items in rows or columns.
+- Flex container is a parent element that contains flex items.
+- The key concepts and properties in flex are:
+
+    | Property           | Description                                                                                                                                                                     | Values                                                                                                                                                    |
+    |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | `flex-direction`    | Determines the direction of the flex items within the flex container.                                                                                                           | `row`, `row-reverse`, `column`, `column-reverse`                                                                                                           |
+    | `flex-wrap`         | Controls whether the flex items should wrap onto multiple lines or not.                                                                                                         | `nowrap`, `wrap`, `wrap-reverse`                                                                                                                          |
+    | `flex-flow`         | Shorthand for setting both `flex-direction` and `flex-wrap` in a single declaration.                                                                                            | Combination of values for `flex-direction` and `flex-wrap`                                                                                                |
+    | `justify-content`   | Aligns the flex items along the main axis of the flex container.                                                                                                                | `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`, `stretch`                                                           |
+    | `align-items`       | Aligns the flex items along the cross axis of the flex container.                                                                                                               | `flex-start`, `flex-end`, `center`, `stretch`, `baseline`                                                                                                 |
+    | `gap`               | Specifies the gap between the flex items in both the horizontal and vertical directions.                                                                                       | Length values (e.g., `10px`, `2rem`), percentages, `normal`                                                                                              |
+    | `row-gap`           | Specifies the size of the gap between flex items in the vertical direction (for flex items in a row).                                                                          | Length values (e.g., `10px`, `2rem`), percentages, `normal`                                                                                              |
+    | `column-gap`        | Specifies the size of the gap between flex items in the horizontal direction (for flex items in a column).                                                                     | Length values (e.g., `10px`, `2rem`), percentages, `normal`                                                                                              |
+    | `order`             | Defines the order of the flex items within the flex container.                                                                                                                   | Integer values, negative values allowed                                                                                                                   |
+    | `align-self`        | Allows the alignment of individual flex items along the cross axis, overriding the `align-items` property for that specific item.                                           | `auto`, `flex-start`, `flex-end`, `center`, `baseline`, `stretch`                                                                                        |
+### Grid Layout
+- Grid layout is a pwoerful layout model in css, that allows us to create complex 2d layouts for a web pages.
+- Grid allows us to arrange grid-items in rows and columns.
+- Grid container is aprent element that contains grid-items.
+- The key concepts and properties in grid are:
+
+    | Property                | Description                                                                                                                                                                    | Values                                                                                                                                                    |
+    |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | `display`               | Defines the element as a grid container and establishes a new grid formatting context for its contents.                                                                         | `grid`, `inline-grid`                                                                                                                                     |
+    | `grid-template-rows`    | Defines the size and structure of the grid rows.                                                                                                                               | Length values (e.g., `100px`, `20%`), `auto`, `min-content`, `max-content`, `fr`, `repeat()`                                                             |
+    | `grid-template-columns` | Defines the size and structure of the grid columns.                                                                                                                            | Length values (e.g., `100px`, `20%`), `auto`, `min-content`, `max-content`, `fr`, `repeat()`                                                             |
+    | `grid-template-areas`   | Defines named grid areas, which can be referenced by grid items.                                                                                                               | Strings defining the layout of grid areas (e.g., `"header header header" "sidebar content content" "footer footer footer"`)                             |
+    | `grid-area`             | Assigns a grid item to a named grid area, or specifies its size within the grid layout.                                                                                         | Name of a named grid area, or values defining the size of the grid item (e.g., `row-start / column-start / row-end / column-end`)                        |
+    | `justify-items`         | Aligns grid items along the inline (row) axis within their grid cell.                                                                                                          | `start`, `end`, `center`, `stretch`                                                                                                                       |
+    | `align-items`           | Aligns grid items along the block (column) axis within their grid cell.                                                                                                        | `start`, `end`, `center`, `stretch`, `baseline`                                                                                                            |
+    | `justify-content`       | Aligns the grid along the inline (row) axis.                                                                                                                                   | `start`, `end`, `center`, `stretch`, `space-around`, `space-between`, `space-evenly`                                                                      |
+    | `align-content`         | Aligns the grid along the block (column) axis.                                                                                                                                  | `start`, `end`, `center`, `stretch`, `space-around`, `space-between`, `space-evenly`                                                                      |
+    | `grid-gap`              | A shorthand for `row-gap` and `column-gap`, sets the size of the gap between grid rows and columns.                                                                             | Length values (e.g., `10px`, `2rem`), percentages, `normal`                                                                                              |
+    | `row-gap`               | Specifies the size of the gap between grid rows.                                                                                                                                 | Length values (e.g., `10px`, `2rem`), percentages, `normal`                                                                                              |
+    | `column-gap`            | Specifies the size of the gap between grid columns.                                                                                                                             | Length values (e.g., `10px`, `2rem`), percentages, `normal`                                                                                              |
+    | `grid-auto-rows`        | Defines the size of implicitly created rows in the grid.                                                                                                                        | Length values (e.g., `100px`, `20%`), `auto`, `min-content`, `max-content`, `fr`                                                                         |
+    | `grid-auto-columns`     | Defines the size of implicitly created columns in the grid.                                                                                                                     | Length values (e.g., `100px`, `20%`), `auto`, `min-content`, `max-content`, `fr`                                                                         |
+    | `grid-auto-flow`        | Controls how auto-placed items are placed in the grid.                                                                                                                          | `row`, `column`, `row dense`, `column dense`                                                                                                               |
+    | `grid-column`           | Specifies a grid item's size and location within the grid column lines.                                                                                                         | `start / end`, `span <number>`                                                                                                                            |
+    | `grid-row`              | Specifies a grid item's size and location within the grid row lines.                                                                                                            | `start / end`, `span <number>`                                                                                                                            |
+    | `justify-self`          | Aligns a grid item along the inline (row) axis, overriding the `justify-items` value for that item.                                                                            | `start`, `end`, `center`, `stretch`                                                                                                                       |
+    | `align-self`            | Aligns a grid item along the block (column) axis, overriding the `align-items` value for that item.                                                                            | `start`, `end`, `center`, `stretch`, `baseline`                                                                                                            |
+
+### CSS Flex vs CSS Grid
+
+| Feature            | CSS Flexbox                                                | CSS Grid                                                    |
+|--------------------|------------------------------------------------------------|-------------------------------------------------------------|
+| Layout Model       | One-dimensional layout model, used for laying out items in a single direction (row or column). | Two-dimensional layout model, used for creating grid-based layouts with rows and columns. |
+| Axis               | Has a main axis and a cross axis. Items are laid out along the main axis and can be aligned along the cross axis. | Has both row and column axes, allowing for more complex layouts with rows and columns. Items can be aligned along both axes. |
+| Alignment          | Uses properties like `justify-content` and `align-items` to align items along the main and cross axes respectively. | Uses properties like `justify-items`, `align-items`, `justify-content`, and `align-content` for alignment, providing more control over both axes. |
+| Spacing            | Provides limited control over spacing between items. You can use properties like `justify-content: space-between` or `margin` for spacing. | Provides more control over spacing between rows and columns using properties like `grid-gap`, `row-gap`, and `column-gap`, allowing for precise spacing in grid layouts. |
+| Use Cases          | Best suited for simpler layouts where items need to be flexibly sized and aligned along a single axis, such as navigation menus or card layouts. | Ideal for more complex layouts with multiple rows and columns, such as website layouts, forms, or dashboard designs. Provides greater flexibility and control over the layout. |
