@@ -21,7 +21,7 @@
         - It stands for JavaScript and XML, It allows us to write HTML and JavaScript in the React file.
     - Props and State: 
         - Props are used to pass the data from one component to another component. 
-        - State are typically used the store component s pecific data which is likely to be changed and they are muttable as we can directly change using setState()
+        - State are typically used the store component specific data which is likely to be changed and they are muttable as we can directly change using setState()
     - Context: It allows us to pass the data through components as props in a hirarchy.
     - Virtual DOM:It is a light weight copy of the actual DOM which make the DOM manipulation easier.
 5. Explain Props and State in react with differences?
@@ -62,7 +62,7 @@
 9. Can browser read jsx file or How do browser reads jsx?
     - Browsers cannot read jsx file, It can read only pure JavaScript file.
     - The web browser reads the jsx files using the transpiler which converts jsx into JavaScript.
-    - The transpiler usid is called babel.
+    - The transpiler used is called babel.
 10. Explain the steps to create react app and run
     - Open the new terminal then type:
         ```
@@ -112,14 +112,15 @@
         - It is the parent component that is used to store all the other components.
         - Everything inside this will be the part of routing functionality
     - Routes:
-        - Routes are used to choose the route based on the best match instead of being traversed in order.
+        - This component is used to group Route components together. 
+        - It renders the first Route that matches the current URL and ignores all subsequent Route components.
     - Route: 
-        - Route is a conditionally shown component that renders when UI matches its path with the URL
+        - This component is used to define a route and specify which component to render when the route matches the current URL.
+        -  It takes several props, such as path (the route path to match), component (the component to render), and exact (whether the path should be matched exactly).
     - Link:
         - The link component is used to create links to different routes and implement navigation around the application
 19. What are hooks?
     - Hooks allows functional components to use the states and manage side effects.
-    - They let us to use the states and other react features without writing a class.
     - React hooks are used when we need to add the state to functional component without converting the component to class component.
     - The types of React hooks are:
         - State Hooks:
@@ -171,7 +172,7 @@
             - *useEffect*():
                 - useEffect() allows us to perform some side effects on the components.
                 - Fetching data, directly updating the DOM and timers are some of the side effects.
-                - It is called everytime whenever there is a change in the state if the dependency array is modified or updated.
+                - It is called everytime whenever there is a change in the state of the dependency array (i.e, modified or updated).
                 - Syntax:
                     ```js
                         useEffect(() => {
