@@ -4,7 +4,7 @@
 | --- | --- | --- | --- |
 | 001 | [Simple Calculator](https://harshitha-sc23.github.io/JSBeginners/simple-calculator/calculator.html)| [Click Here](https://github.com/HARSHITHA-SC23/JSBeginners/tree/main/simple-calculator) |&bull; HTML: `basic structure`<br>&bull; CSS: `selectors, display and position property, measuring units`<br>&bull; JavaScript: `createElement, slice property, switch, addEventListner, append vs appendChild` |
 | 002 | [Generate Random Password](https://harshitha-sc23.github.io/JSBeginners/password-generator/generator.html)| [Click Here](https://github.com/HARSHITHA-SC23/JSBeginners/tree/main/password-generator)|&bull; HTML: `input-checkbox` <br>&bull; JavaScript: `navigator.clipboard, floor(), random()` |
-| 001 | [Real-Time clock](#)| | |
+| 001 | [Real-Time clock](https://harshitha-sc23.github.io/JSBeginners/digital-clock/clock.html)| [Click here](https://github.com/HARSHITHA-SC23/JSBeginners/tree/main/digital-clock) | &bull; CSS: `Media queries, box shadow, Text linear-gradient`<br>&bull; JavaScript: `Date() and their methods`|
 | 001 | [Timer - starts, stops, reset](#)| | |
 | 001 | [Form validation & Submit script LocalStorage](#)| | |
 | 001 | [Simple weather application](#)| | |
