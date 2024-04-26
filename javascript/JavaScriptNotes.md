@@ -264,7 +264,7 @@
 - Array can be declared in two ways:
     - Using Array literal(square brackets):<br>
         example : const alphabets = ['a','b','c'];
-    - Usimg Array constructore(new Array() method):
+    - Using Array constructore(new Array() method):
         example : const alphabets =  new Array('a','b','c');
 
 <b>Array methods: </b>

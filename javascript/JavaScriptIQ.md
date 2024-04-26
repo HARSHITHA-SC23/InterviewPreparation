@@ -167,6 +167,9 @@
 7. Explain the concept of function currying.
     - Currying is functional programming technique that breaks down the function which takes multiple arguments into series of function that takes one argument each.
     - Each function returns another function until the final result is achieved.
+    - The purpose of currying are:
+        - Partial application: Allows us to create specialized functions by passing partial arguments.
+        - Code reusability: code reusability by allowing us to create specialized functions that can be used in different contexts.
     - ```js
         // case 01: for finite number of arguments
         function add(x) {
@@ -247,7 +250,7 @@
 
 ## Important Questions
 
-1. Is JavaScript single/multithreade and explain why
+1. Is JavaScript single/multithreads and explain why
     - JavaScript is a single threaded language (It means it can run only one thing at a time), It is synchronous in nature.It has one call stack and one memory heap.
     - It is single threaded because it executes code in a sequential manner, it must finish one piece of code befor moving onto the next.
 
