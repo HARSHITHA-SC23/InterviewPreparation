@@ -15,10 +15,10 @@
     |---------------------------|-----------------|--------------------------------------------------------|--------------------------------------------------------|
     | [General Problems](./GeneralProblem.md) | - | - | - |
     | [Array](./Array.md)       | Linear          | Access, Insertion, Deletion, Search                    | Linear Search, Binary Search, Insertion Sort, Merge Sort, Quick Sort |
-    | Linked List               | Linear          | Insertion, Deletion, Search, Traversal                 | -                                                      |
-    | Stack                     | Linear          | Push, Pop, Peek, isEmpty, isFull                       | -                                                      |
-    | Queue                     | Linear          | Enqueue, Dequeue, Peek, isEmpty, isFull                | -                                                      |
-    | Tree                      | Non-Linear      | Insertion, Deletion, Search, Traversal                 | Binary Search Tree (BST), AVL Tree, Red-Black Tree, Tree Traversal (Inorder, Preorder, Postorder) |
+    | [Linked List](./LinkedList.md) | Linear          | Insertion, Deletion, Search, Traversal                 | -                                                      |
+    | [Stack](./Stack.md)                     | Linear          | Push, Pop, Peek, isEmpty, isFull                       | -                                                      |
+    | [Queue](#)                     | Linear          | Enqueue, Dequeue, Peek, isEmpty, isFull                | -                                                      |
+    | [Tree](./Tree.md)                      | Non-Linear      | Insertion, Deletion, Search, Traversal                 | Binary Search Tree (BST), AVL Tree, Red-Black Tree, Tree Traversal (Inorder, Preorder, Postorder) |
     | Binary Tree               | Non-Linear      | Insertion, Deletion, Search, Traversal                 | Binary Search, AVL Tree, Red-Black Tree               |
     | B-Tree                    | Non-Linear      | Insertion, Deletion, Search, Traversal                 | -                                                      |
     | B+-Tree                   | Non-Linear      | Insertion, Deletion, Search, Traversal                 | -                                                      |

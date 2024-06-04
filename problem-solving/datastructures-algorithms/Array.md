@@ -49,7 +49,7 @@
         - stop: ending index
         - step: step size(default to 1).
 11. How do you check if a value exists in a list/array in Python?
-    - Using in operator
+    - Using `in` operator
 12. What is the difference between append() and extend() methods in Python lists?
     - append() is used to add single element to the end of a list.
     - extend() is used to add multiple elements such as another list to the end of a list.
@@ -58,6 +58,10 @@
     - But in timed map data structure, It has an additional feature of associating a time limit with each key-value pair.
     - Once the time limit for key-value pair is exceeded it can be treated has a invalid and can be removed from the timed map.
     - Timed map is useful for implementing caching or managing data that needs to be refreshed periodically.
+14. What is prefix sum technique in array?
+    - Prefix sum is also know as cummulative sum
+    - It is a technique used to calculate the sum of elements in a subarray of an array.
+    - Prefixsum is commonly used in scenarios where we need to calculate sums of sun=barrays or ranges of elements repeatedly, such as finding the sum of elements in a given range,or counting the number of subarrays with a specific sum.
 
 ## Coding Problems
 
@@ -250,8 +254,9 @@
             return result
 
     ```
+## Dynamic Programming
 
-### Explain Dynamic Programming, algorithm, advantage & disadvantage, time & space complexity. (Paused)
+### Explain algorithm, advantage & disadvantage, time & space complexity. (Paused)
 
 
 1. What is Dynamicc programming?
