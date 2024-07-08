@@ -126,7 +126,7 @@
         - An unordered lists is used to create a list of items that do not have a specific order or sequence.
         - Each item in a list is represented using `<li> (list item abbreviated as li)`.
         -  Unordered lists are typically displayed with bullets or other markers before each items.
-        - The different types of attributes we can use with `<ol>` are:
+        - The different types of attributes we can use with `<ul>` are:
             - type: 
                 - It is not commonly used for `<ul>` as it is more relevant for `<ol>`.
                 - It specifies the type of the marker we need to use such as circle, square or disc.            
