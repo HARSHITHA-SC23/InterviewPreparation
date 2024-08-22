@@ -17,10 +17,10 @@
         - Both the methods remove element from the set.
         - The key differnce is if the element is not present in the set `remove()` throws `KeyError`, whereas `discard()` does nothing.
 5. What are the common set operations?
-    - Union: union()
-    - intersection: intersection()
-    - difference: difference()
-    - symmetric difference: symmetric_difference()
+    - Union: union() or `|`
+    - intersection: intersection() or `&`
+    - difference: difference() or `-`
+    - symmetric difference: symmetric_difference() `^`
 6. How to check whether the element is present in set or not?
     - Using `in` operator
 7. what is frozenset in python?
@@ -28,13 +28,18 @@
     - Once the frozenset is created, it elements cannot be changed, added, or removed.
     - frozenset can be created using `frozenset(set)`.
 8. How to convert list to set or vice versa?
-    - Using `set()` method or `list()` metjod.
+    - Using `set()` method or `list()` method.
 9. How to iterate a set?
     - Using loop
 10. what is the Time complextity of the set?
     - Adding/removing element: O(1)
     - worst case: O(n)
-
+11. How do you create a set?
+    - Using `{}` or
+    - Using `set()` method
+12. What is subset and superset?
+    - A subset is a set whose all elements are contained within another set. whereas A superset is a set that contains all the elements of another set. 
+    - To check whether a set is subset of another set we use `issubset()` method, whereas to check whether a set is the superset of another set we use `issuperset()` method.
 ## Coding Problems
 
 | Problem                                | Description                                                                                                                                                                  | Algorithm                                                                                                                                                                                                                                                                                                   |
