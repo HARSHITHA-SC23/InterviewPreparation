@@ -59,11 +59,11 @@
     | **Size control** | Width and Height can be set | we cannot control the height and width of the element |
     | **Example** | `<div>, <p>, <h1> to <h6>, <ul>, <ol>, <li>, <table>, <section>, <article>, <header>, <footer>, and <nav>` | `<span>, <a>, <em>, <strong>, <img>, <br>, <code>, <input>, <label>, and <button>` |
 
-6. What is the purpose of the alt attribute in the <img> tag?
-    - The purpose of alt attribute in the <img> tag is to display the alternative text or the textual description for the image when the image has not loaded properly.
+6. What is the purpose of the alt attribute in the `<img>` tag?
+    - The purpose of alt attribute in the `<img>` tag is to display the alternative text or the textual description for the image when the image has not loaded properly.
 
 7. How do you create a hyperlink in HTML? What is the difference between an absolute and a relative URL?
-    - Hyperlink can be created using <a> anchor tag along with `href` attribute which specifies the url.
+    - Hyperlink can be created using `<a>` anchor tag along with `href` attribute which specifies the url.
     - An `absolute url` contains the full address of a web resource including the protocol, domain name and path. It is a complete url that can be used to link to a resource anywhere on the web.
     - A `relative url` dosen't include the domain name and it is used to link to the resource within same website. 
 
@@ -117,14 +117,14 @@
     - Make the link descriptive as much as possible
     - Test with assisstive technologies.
 
-12. Can you describe the structure and purpose of the <head> and <body> sections in an HTML document?
+12. Can you describe the structure and purpose of the `<head>` and `<body>` sections in an HTML document?
     - `<head>`:
         - The head is where we provide meta information about the HTML document.
         - The information provided in the head section is not visible in the browser but it is necessary for browser, SEO and other web services.
         - It is use to link the external resources like CSSstyles and Javascript file.
     - `<body>`: 
         - The body section contains the actual content of the webpage, which is visible to the user in the web browser.
-13. What is the role of the <meta> tag in HTML?
+13. What is the role of the `<meta>` tag in HTML?
     - Meta tags in HTML are used to provide the metadata about the HTML document.
     - Metadata is a information about the HTML document which is not displayed in the webpage but essential for search engines and other web services.
     - Meta tags are placed in `<head>` section of an HTML document.
@@ -138,7 +138,7 @@
         - http-equiv="refresh"
 
 14. What is the purpose of the doctype declaration in HTML?
-    - The docttype is not a HTML tag but it is a declaration.
+    - The doctype is not a HTML tag but it is a declaration.
     - It instructs the web browser about the version of the HTML dcoument is written in.
 15. How do you embed multimedia content like audio and video in HTML5?
     - Audio: `<audio>`
@@ -146,4 +146,5 @@
 
 16. What are data attributes in HTML5, and how are they used?
     - Data attributes in HTML5 allow you to store extra information directly on HTML elements without affecting their presentation or behavior. 
+    - Data attributes are defines using prefix `data-` followed by a custom name.
     - These attributes are useful for storing custom data that can be easily accessed and manipulated using JavaScript.

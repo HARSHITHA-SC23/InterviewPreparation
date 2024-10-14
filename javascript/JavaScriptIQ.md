@@ -248,6 +248,21 @@
     - then/catch method
     - async/await
 
+## Closures
+
+1. Write a JavaScript function that prints numbers in sequence, where each number is printed after its corresponding number of seconds (e.g., 1 after 1 second, 2 after 2 seconds, and so on) using var only
+- ![alt text](./assets/image-4.png)
+
+2. What is a closure?
+3. Advantages of closure:
+    - Data hiding: Data privacy where a variable is not accessible by other part of the code.
+    - Data privacy using closure: We can observe using counter function
+    ![alt text](./assets/image-5.png)
+4. Usage of constructor:
+    ![alt text](./assets/image-6.png)
+5. Disadvantages of constructor:
+    - Consumption  of memory, the variables which are in the closure are not garbage collected untill the program expires
+
 ## Important Questions
 
 1. Is JavaScript single/multithreads and explain why
