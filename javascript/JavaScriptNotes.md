@@ -347,7 +347,8 @@
     ```
 
 <b> Functional Programming and Higher Order Function</b>
-- **Higher Order Function:**
+
+<b>Higher Order Function:</b>
     - A function which takes function as an argument or returns a function from it are known as HOF.
 
 <b> Callback Functions</b>
@@ -422,7 +423,7 @@
         - localstorage
         - location
     - We are able to access all these web APIs inside the Callstack because of the `Global object i.e., window`.
-- <b> Event Loop and Callback Queue </p>
+- <b> Event Loop and Callback Queue </b>
     - Consider a program performing an asynchronous operation using setTimeout. After a few seconds, it needs to print something.
     - Since JavaScript runs everything inside the call stack, we need a way to push the callback function registered in the browser (through setTimeout) into the call stack after the timer expires.
     - This is where the callback queue and event loop come into play.
@@ -716,6 +717,7 @@
     ```
 
 #### JavaScript Promises
+
 - Promises are used to handle asynchronous operations in JavaScript.
 - A promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 - Whenever JavaScript encounters an asynchronous operation, it creates a promise object in a pending state. Once the operation completes, the promise is either fulfilled with a value or rejected with a reason (error).
@@ -760,3 +762,22 @@
         - It will return the value of the first settled promise. If the first settled promise is rejected then it will return the error.
     - Promise.any():
         - It is similar to Promise.race(), but it will wait until the anyone of the first promise resolves successfully. If everything fails then the result will be aggregated error.
+
+#### Memoization
+
+- Memoization is a technique used to optimize the functions by caching the expensive calculations and returning the same calculations when the same input occurs.
+- Closure helps caching by creating private cache that persists across the functions
+
+#### Prototype
+
+- Every object in JavaScript has the internal property which is know as the prototype which points to the another object. The prototype is used to share the properties and method amongst all the instances.
+- When we try to access property or method of an object JS checks the object itself. If not present JS looks for the prototype of the object if it doesn't exists it looks in the prototype of the protype this is known as Prototype chain.
+- Protype are important because of memory efficiency and to implement inheritance.
+
+#### setTimeout() vs setInterval()
+- setTimeout():
+    - It is used to execute a function after certain delay.
+    - It will be useful when we want to run the function only once and after certain delay
+- setInterval():
+    - It is used to repeatedly execute a function after each interval or delay.
+    - It will be useful when we want to call the function repeatedly and after certain delay.
