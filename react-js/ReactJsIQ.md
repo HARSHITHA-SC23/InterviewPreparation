@@ -77,7 +77,7 @@
         - useRef()
 
 8. What is *useState()* hook explain in detail
-    - useState() hook is used provides state variable to the function component along with the direct update access.
+    - useState() hook is used to provide state variable to the function component along with the direct update access.
     - It returns an array containing two values:
         - current state of the component.
         - A function to update the state value.

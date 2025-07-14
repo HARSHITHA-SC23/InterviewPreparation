@@ -55,13 +55,13 @@
         - program stack
         - runtime stack etc.
 
-<b> Hoisting in JavaScript </b>
-    - Hoisting is concept of extracting variables and functions to the top of their scope before the initialization without getting any errors.
-    - In JavaScript hoisting happens by default. It happens during the first phase of the execution context i.e., memory allocation phase.
-    - Functions are fully hoisted allowing them to use before their actual definition.
-    - Variables are hoisted but only the declaration and initialized with undefined.
-    - let and const are hoisted only the declaration and uninitialized leading to tTemporal Dead Zone(TDZ). If tried to access before initialization throws `ReferenceError`.
-    - Function expression and arrow functions are hoisted as variables so if we try to access before declaration it will throw `TypeError`.
+<b>Hoisting in JavaScript</b>
+- Hoisting is concept of extracting variables and functions to the top of their scope before the initialization without getting any errors.
+- In JavaScript hoisting happens by default. It happens during the first phase of the execution context i.e., memory allocation phase.
+- Functions are fully hoisted allowing them to use before their actual definition.
+- var variables are hoisted but only the declaration and initialized with undefined.
+- let and const are hoisted only the declaration and uninitialized leading to tTemporal Dead Zone(TDZ). If tried to access before initialization throws `ReferenceError`.
+- Function expression and arrow functions are hoisted as variables so if we try to access before declaration it will throw `TypeError`.
 
 
 ## JavaScript Basics - Part 1
@@ -330,6 +330,7 @@
 
 <b>Arrow Function: </b>
 - Arrow functions are introduced as a part of ES6 2015.
+- Arrow functions are the shorthand form of the regular function
 - An arrow function is defined using a pair of '()' that contains list of parameters, followed by a fat arrow =>, and list of statements enclosed within '{}'.
 - When we have a single parameter '()' can be ommitted.
 - When we have a single statement '{}' can be ommitted.
@@ -346,6 +347,11 @@
         }
     ```
 
+<b>How arrow functions are different from Regular Function</b>
+- `arguments object` is available in regular function whereas in arrow function it is not available
+- `implict return` is not available in regular function i.e., we must call return and it is available in arrow function.
+- `syntax` is longer in regular function and shorter in arrow function.
+
 <b> Functional Programming and Higher Order Function</b>
 
 <b>Higher Order Function:</b>
@@ -356,7 +362,9 @@
 - Advantages of callback:
     - Since JavaScript is a synchronous single threaded language callback functions gives us `access to to asynchronous world`.
 - `Blocking main thread`: JavaScript has only one Callstack and we can call it has main thread. If any operation block the callstack then it is known as blocking the main thread. To avoid blocking of mainthread we should use async operations.
-- The main disadvantage of Callback is the callback hell(Nested callback). The structure is also known as Pyramid doom. Another one is invasion of control.
+- The main disadvantage of Callback is:
+    - callback hell(Nested callback), the structure is also known as Pyramid doom.  
+    - Invasion of control.
 
 <b>Event Listeners</b>
 - Event listeners in JavaScript are functions or methods that performs a specific callback event when certain event occurs for example button clicked, typing on keyboard etc.
@@ -378,21 +386,31 @@
 - The empty file is the shortest JavaScript program. 
 - When we run the empty file, It still creates a Global Execution Context and sets up the memory space.
 - Along with the GEC the JavaScript engine creates `window` and `this` keyword is created.
+- `this keyword`:
+    - The this keywprd refers to the object that is executing the current function.
+    - Its value is defined by how the function is called not where it is defined means we can define a function inside an object, but if we call it without the object, this loses its reference. That’s what "how it is called" matters more than where it is defined means.
+    - Context:
+        - Global scope : Global object or window in the browser
+        - Inside object method: refers to the object that owns the method.
+        - Inside a regular function: Global object or window in the browser.
+        - Inside a arrow function: Lexicaly inherit this from the outer scope.
+        - Inside event handler: The DOM element that trigger the event.
 - All the JavaScript engine has the responsibility of creating GEC in terms of browser it is known as `window`, in terms of node it is `global` etc.
 
 <b> Closures </b>
 - ![alt text](./assets/image-2.png)
-- Closure is a function along with its lexical scope or environment that together forms a closure
-- Closures in JavaScript allows inner function to access variables from their outer lexical environment.
-- In JavaScript function can return another function, here comes the closure concept. It returns function along with its lexical scope or lexical environment.
+- Closure is a function along with its lexical scope or environment that together forms a closure.
+- Closure is formed when a function retains access to the variables from its lexical environment or scope, even after that the outer function has finished executing.
+- Closures allows inner function to access variables from their outer lexical environment.
+- In JavaScript functions are first class object, so a function can return another function, when it does the returned function retains the access to the variables from the scope in which it was created. This reatined access forms a closure.
+- Corner cases in the Closures are:
+    - `Closures capture variable by reference not by the value`: If the outer function variable used in inner function and it has been changed somewhere before returning or called, The new function will retain new modified value but not the old ones which had when closure was created.
 - In the above example `d` and `a` are the closures of `y`.
 - ![alt text](./assets/image-3.png)
 - From the above image we can observe that `func x` is returning `func y` itself. 
 - We can store this function in some variable and call this function whenever we required later in the code.
 - The returned function will still have the access to the variable in the x function.
 - Here closure comes into picture, even after exiting from the outer function the inner function will still have the access to outer function variables.
-- Corner cases in the Closures are:
-    - `Closures capture variable by reference not by the value`: If the outer function variable used in inner function and it has been changed somewhere before returning or called, The new function will retain new modified value but not the old ones which had when closure was created.
 - Uses of Closures:
     - Module Design patterns
     - Currying
@@ -722,6 +740,7 @@
 - A promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 - Whenever JavaScript encounters an asynchronous operation, it creates a promise object in a pending state. Once the operation completes, the promise is either fulfilled with a value or rejected with a reason (error).
 - The `.then()` method is used to attach a callback function to a promise. This function is automatically called when the promise is fulfilled (resolved) with a value.
+- The `.catch()` method is used to attach a function which handle error gracefully to a promise. This function is called automatically when the promise is rejected with an error.
 - In a promise we can see two things:
     - PromiseState: It represents the current state of the promise. A promise can be in any one of the state they are:
         - pending: The initial state where the promise still waiting for the operation to complete.
@@ -781,3 +800,64 @@
 - setInterval():
     - It is used to repeatedly execute a function after each interval or delay.
     - It will be useful when we want to call the function repeatedly and after certain delay.
+
+## JavaScript Advance
+
+#### Currying in JavaScript
+
+- Currying in JavaScript is a technique of transforming a function with multiple arguments into a sequence of nested function that each takes single argument or one argument at a time.
+- It helps in functional reuse, partial application and etc.,
+### Partial application
+
+- Partial application  is a technique where we pre fill some arguments in a function and creates a new function that takes remaining arguments.
+- Partial application is not same as currying but it can be achieved by currying
+
+### Shallow copy:
+- A shallow copy creates new object or or an array and copies references to the elements(not the value but the address) from the object or array.
+- The changes to the shallow copy effects the orginal copy.
+- The shallow copy can be created using:
+    - Spread operator (...)
+    - Object.assign()
+    
+### Deep copy:
+- A deep copy creates completely new array or an object and copies both the address and the data.
+- The changes to the deep copy won't effect the orginal copy because it doesn't share any data with the orginal array.
+- The deep copy can be created using:
+    - JSON.parse(JSON.stringify(obj))
+    - structuredClone(obj)
+    - lodash
+        - npm install
+        - _.cloneDeep()
+
+### Debounce
+- Debounce can be imagined as `Wait few moment after they stop`.
+- Debounce waits until the user stops triggering the event.
+- Debounce is a performance optimization technique. It can be used in the following usecase
+    - Search input
+    - Auto suggestion
+
+### Throtlling 
+- Throtling can be imagined as `Atmost once every X ms`.
+- Throtling runs the function atmost once in the regular intervals during the event.
+- Throtling is also a performance optimization technique. It can be used in the following usecase
+    - Scroll
+    - Resize
+
+### DOM and Browser environment
+
+#### DOM
+- DOM stands for Document Object Model. It is a tree like structure which browser creates from the HTML page.
+- It represents everything on the page like elements, attributes, content etc.
+- When browser loads the HTML page it parses the HTML from top to bottom and builds the DOM tree.
+- All the elements in the HTML represents the node in the DOM tree. It is like a branch in the tree.
+- Using DOM methods we can read, update or delete element dynamically.
+
+#### document.getElementByID vs document.querySelector
+
+- Both the method used to select the node/element from the DOM tree. But they differ in how and what they select.
+- getElementByID(): Selects element by ID. It returns only one element and it is faster
+- querySelector(): It uses CSS selector to get the element from the tree. It returns the first matching element. It is more flexible and powerful.
+
+#### Event delegation
+- Event delegantion means attaching a single event listener to the parent element and use it to handle the events triggered by the child element.
+- Event delegation works because of a concept called event bubbling in JavaScript.
